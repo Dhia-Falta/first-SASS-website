@@ -1,0 +1,109 @@
+.footer {
+	background-color: #E2E2E2;
+	overflow: hidden;
+	padding-top: 30px;
+	margin-top: 50px;
+
+	.gallery{
+		@media #{$minSmall}{
+			width: 100%
+		}
+		@media #{$minMedium}{
+			width: 50%;		
+			float: $float-left;
+		}
+
+		.img-box{
+			overflow: hidden;
+			img {
+				@media #{$minSmall}{
+					float: $float-left;					
+				}
+				width: 250px;
+				margin-bottom: 20px;
+			}
+
+			.text{
+				@media #{$minSmall}{
+					float: $float-left;		
+					margin-left: 15px;
+					margin-right: 15px;
+					width: calc(100% - 280px);			
+				}
+
+				h4{
+					color: $redColor;
+					margin-bottom: 0;
+				}
+				p{
+					color: #888;
+				}
+			}
+		}
+	}
+	.info{
+		@media #{$minSmall}{
+			width: 5%
+		}
+		@media #{$minMedium}{
+			width: 25%;		
+			float: $float-left;
+		}
+		ul{
+			color: #888;
+			line-height: 1.8;
+			span{
+				color: $redColor;
+				font-weight: bold;
+			}
+		}
+		h4 {
+			color: #888;
+			font-weight: bold;
+			margin-bottom: 0; 
+		}
+		p{
+			color: #888;
+			margin-top: 8px; 
+		}
+	}
+	.contact{
+		@media #{$minSmall}{
+			width: 50%
+		}
+		@media #{$minMedium}{
+			width: 25%;		
+			float: $float-left;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		textarea {
+			width: 100%;
+			padding: 8px;
+			margin-bottom: 10px;
+			border-radius: 40px;
+			border: 1px solid #adadad;
+			outline: none;
+		}
+		textarea{
+			height: 100px;
+		}
+	}
+	.section-title{
+		color: #777;
+	}
+	.copyright {
+		overflow: hidden;
+		padding:25px 0;
+		border-top: 1px solid $greyColor;
+		.text, .auther{
+			float: $float-left;
+			width: 50%;
+			color: #888;
+		}
+		.auther{
+			text-align: $text-right;
+		}
+	}
+}
